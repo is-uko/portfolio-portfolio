@@ -1,0 +1,224 @@
+input,
+textarea {
+  border: 1px solid #c8c8c8;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  padding: 0 4%;
+}
+
+.mainvisual {
+  width: 100%;
+  object-fit: cover;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+header img {
+  height: 36px;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding-right: 30px;
+}
+
+nav ul li:last-child {
+  padding-right: 0;
+}
+
+nav ul li a {
+  color: #000;
+}
+
+nav img {
+  width: 20px;
+  height: 20px;
+}
+
+.mainvisual .pc {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.about {
+  padding-top: 80px;
+}
+
+.about .data {
+  padding: 30px 0;
+}
+
+.works {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.works .images {
+  display: grid;
+  grid-template:
+    "image1"
+    "image2"
+    "image3"
+    "image4"
+    "image5"
+    "image6";
+  gap: 23px;
+}
+
+.news {
+  padding-bottom: 70px;
+}
+
+.news tr:first-child {
+  border-top: 1px solid #c8c8c8;
+}
+
+.news tr {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.news td:first-child {
+  padding: 15px 14px 0 14px;
+}
+
+.news td:last-child {
+  padding: 0 14px 15px 14px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  text-align: left;
+  font-size: 14.4px;
+}
+
+.contact input {
+  height: 43px;
+}
+
+.contact textarea {
+  height: 160px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+}
+
+.contact .form input {
+  margin-bottom: 10px;
+}
+
+.contact .form textarea {
+  margin-bottom: 47px;
+}
+
+.contact a {
+  color: #fff;
+  background-color: #24292e;
+  padding: 17px 85px;
+  border: 1px solid #24292e;
+}
+
+.contact a:hover {
+  color: #24292e;
+  background-color: #fff;
+}
+
+footer {
+  margin-top: 85px;
+  text-align: center;
+  padding: 10px 145px;
+  color: #fff;
+  background-color: #24292e;
+  font-size: 10px;
+}
+
+@media (min-width: 600px) {
+  header,
+  main {
+    width: min(960px, 100vw);
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    padding-bottom: 0;
+  }
+
+  header nav {
+    padding-bottom: 125px;
+  }
+
+  main table {
+    width: 100%;
+  }
+
+  .mainvisual .sp {
+    display: none;
+  }
+
+  .mainvisual .pc {
+    display: block;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .works .images {
+    grid-template:
+      "image1 image2"
+      "image3 image4"
+      "image5 image6";
+  }
+
+  .news tr {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .form {
+    display: flex;
+  }
+
+  .form p {
+    width: 117px;
+  }
+
+  .form input {
+    margin-bottom: 10px;
+  }
+
+  .form textarea {
+    margin-bottom: 47px;
+  }
+}
